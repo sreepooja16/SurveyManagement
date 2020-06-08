@@ -1,0 +1,55 @@
+<style>
+    footer {
+
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(224, 9, 9);
+        color: rgb(192, 17, 17);
+        text-align: center;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col-sm-6">
+            <div class="card bg-transparent">
+                <div class="card-header text-center"><b>LOGIN</b>
+                </div>
+                <div>
+                    <p class="text-danger">{{errorMessage}}</p>
+                </div>
+                <div class="card-body">
+                    <form action="">
+                        <div class="Form-group mx-2 my-3">
+                            <h6>Sign in as</h6>
+                            <div class="row mx-2 my-3">
+                                <div class="col">
+                                    <input type="radio" name="sign" [(ngModel)]="sign" value="user">User</div>
+                                <div class="col">
+                                    <input type="radio" name="sign" [(ngModel)]="sign" value="admin">Admin
+                                </div>
+                            </div>
+                            <label for="username">USER</label>
+                            <input type="text" class="form-control" id="username" [(ngModel)]="username"
+                                placeholder="username" name="username" />
+                        </div>
+                        <div class="Form-group mx-2 my-3">
+                            <label for="pass">PASSWORD</label>
+                            <input type="password" class="form-control" id="password" [(ngModel)]="password"
+                                placeholder="password" name="password" />
+                        </div>
+                        <button type="submit" class="btn btn-primary float-right" (click)="validate()">LOGIN</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+</div>
+<footer class="sticky-footer fixed-bottom">
+    2020 @Copyright
+</footer>

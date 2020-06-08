@@ -1,0 +1,102 @@
+<p>questions-list works!</p>
+<h3>hi</h3>
+<div class="container pt-5">
+	<div class="row">
+		<div class="col">
+		</div>
+		<div class="col-10">
+			<div class="card">
+				<div class="card-header text-center">Survey</div>
+				<div class="card-body">
+					<form action="">
+						<div class="row">
+							<div class="col">
+								<div class="Form-group mx-2 my-3">
+									<label for="username">Q1.{{ questions.question1 }}</label>
+									<div class ="form-control">
+									<div class="col">
+										
+										<div class="col"><input type="radio" name="question1" [(ngModel)]="question1" value="1"/>1</div>
+										<div class="col"><input type="radio" name="question1" [(ngModel)]="question1" value="2"/>2</div>
+										<div class="col"><input type="radio" name="question1" [(ngModel)]="question1" value="3"/>3</div>
+                                          
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="Form-group mx-2 my-3">
+									<label for="password">Q2.{{ questions.question2 }}</label>
+									<div class="col">
+										<div class="col"><input type="radio" name="question2" [(ngModel)]="question2" value="1"/>1</div>
+										<div class="col"><input type="radio" name="question2" [(ngModel)]="question2" value="2"/>2</div>
+										<div class="col"><input type="radio" name="question2" [(ngModel)]="question2" value="3"/>3</div>
+										</div>						
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="Form-group mx-2 my-3">
+									<label for="password">Q3.{{ questions.question3 }}</label>
+									<div class="col">
+										<div class="col"><input type="radio" name="question3"  [(ngModel)]="question3" value="1"/>1</div>
+										<div class="col"><input type="radio" name="question3"  [(ngModel)]="question3" value="2"/>2</div>
+										<div class="col"><input type="radio" name="question3"  [(ngModel)]="question3" value="3"/>3</div>
+
+										</div>
+								</div>
+							</div>
+						
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="Form-group mx-2 my-3">
+									<label for="password">Q4{{ questions.question4 }}</label>
+									<div class="col">
+										<div class="col"><input type="radio" name="question4"  [(ngModel)]="question4" value="1"/>1</div>
+										<div class="col"><input type="radio" name="question4"  [(ngModel)]="question4" value="2"/>2</div>
+										<div class="col"><input type="radio" name="question4"  [(ngModel)]="question4" value="3"/>3</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="Form-group mx-2 my-3">
+									<label for="password">Q5.{{ questions.question5 }}</label>
+									<div class="col">
+										<div class="col"><input type="radio" name="question5" [(ngModel)]="question5"  value="1"/>1</div>
+										<div class="col"><input type="radio" name="question5"  [(ngModel)]="question5"  value="2"/>2</div>
+										<div class="col"><input type="radio" name="question5"  [(ngModel)]="question5" value="3"/>3</div>
+										</div>
+								</div>
+							</div>
+						</div>	
+						<div class="row">
+							<div class="col">
+								<div class="Form-group mx-2 my-3">
+									<label for="password">Q6.{{ questions.question6 }}</label>
+									<div class="col">
+										<div class="col"><input type="radio" name="sign6"  [(ngModel)]="question6" value="1"/>1</div>
+										<div class="col"><input type="radio" name="sign6" [(ngModel)]="question6"  value="2"/>2</div>
+										<div class="col"><input type="radio" name="sign6"  [(ngModel)]="question6" value="3"/>3</div>
+
+										</div>
+								</div>
+							</div>
+						</div>	
+					    
+						<button type="submit" class="btn btn-primary float-right" (click)="addAnswers()" >Submit</button>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+		</div>
+	</div>
+</div>
+      
